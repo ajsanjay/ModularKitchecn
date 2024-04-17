@@ -10,12 +10,19 @@ import SwiftUI
 struct PlaceObjectContainer: View {
     
     @Binding var isModelSelcted: Bool
+    @Binding var selectedModel: Model?
+    @Binding var modelForPlacement: Model?
+    
+    func goBack() {
+        isModelSelcted.toggle()
+        modelForPlacement = nil
+    }
     
     var body: some View {
         
         HStack (spacing: 40) {
             Button {
-                isModelSelcted.toggle()
+                goBack()
                 print("Cancel Button selected")
             } label: {
                 Image(systemName: "xmark")
@@ -23,11 +30,12 @@ struct PlaceObjectContainer: View {
                     .font(.title)
                     .fontWeight(.bold)
             }
-            .buttonStyle(BlueCircleButtonStyle())
+            .buttonStyle(CircleButtonStyle())
             .foregroundColor(.white)
             
             Button {
-                isModelSelcted.toggle()
+                modelForPlacement = selectedModel
+                goBack()
                 print("Ok Button selected")
             } label: {
                 Image(systemName: "checkmark")
@@ -35,12 +43,12 @@ struct PlaceObjectContainer: View {
                     .font(.title)
                     .fontWeight(.bold)
             }
-            .buttonStyle(BlueCircleButtonStyle())
+            .buttonStyle(CircleButtonStyle())
             .foregroundColor(.white)
         }
     }
 }
 
-#Preview {
-    PlaceObjectContainer(isModelSelcted: .constant(true))
-}
+//#Preview {
+//    PlaceObjectContainer(isModelSelcted: .constant(true), selectedModel: .constant("nil"), modelForPlacement: .constant("nil"))
+//}

@@ -10,8 +10,9 @@ import SwiftUI
 struct ModelsContainer: View {
     
     @Binding var isModelSelected: Bool
+    @Binding var selectedModel: Model?
     
-    var ThreeDobjects: [String]
+    var ThreeDobjects: [Model]
     
     var body: some View {
         VStack {
@@ -20,10 +21,10 @@ struct ModelsContainer: View {
                 HStack() {
                     ForEach(ThreeDobjects.indices, id: \.self) { index in
                         Button {
-                            print("Selected model: \(ThreeDobjects[index])")
+                            selectedModel = ThreeDobjects[index]
                             isModelSelected.toggle()
                         } label: {
-                            Image(uiImage: UIImage(named: ThreeDobjects[index])!)
+                            Image(uiImage: ThreeDobjects[index].image)
                                 .resizable()
                                 .frame(height: 100)
                                 .aspectRatio(1/1, contentMode: .fit)
@@ -39,6 +40,6 @@ struct ModelsContainer: View {
     }
 }
 
-#Preview {
-    ModelsContainer(isModelSelected: .constant(false), ThreeDobjects: MockData.ThreeDModels)
-}
+//#Preview {
+//    ModelsContainer(isModelSelected: .constant(false), selectedModel: .constant("nil"), ThreeDobjects: MockData.ThreeDModels)
+//}
