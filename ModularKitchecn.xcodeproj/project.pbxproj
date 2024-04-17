@@ -14,6 +14,8 @@
 		8DDFFB0A2BCFF9DA0065BD96 /* Kitchen_Design_Set_V.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 8DDFFB092BCFF9DA0065BD96 /* Kitchen_Design_Set_V.usdz */; };
 		8DDFFB0D2BCFFEED0065BD96 /* constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDFFB0C2BCFFEED0065BD96 /* constants.swift */; };
 		8DDFFB0F2BD003420065BD96 /* Painted_wooden_kitchen_cabinet.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 8DDFFB0E2BD003420065BD96 /* Painted_wooden_kitchen_cabinet.usdz */; };
+		8DDFFB122BD0289C0065BD96 /* ModelsContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDFFB112BD0289C0065BD96 /* ModelsContainer.swift */; };
+		8DDFFB142BD029820065BD96 /* PlaceObjectContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDFFB132BD029820065BD96 /* PlaceObjectContainer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +27,8 @@
 		8DDFFB092BCFF9DA0065BD96 /* Kitchen_Design_Set_V.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = Kitchen_Design_Set_V.usdz; sourceTree = "<group>"; };
 		8DDFFB0C2BCFFEED0065BD96 /* constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = constants.swift; sourceTree = "<group>"; };
 		8DDFFB0E2BD003420065BD96 /* Painted_wooden_kitchen_cabinet.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = Painted_wooden_kitchen_cabinet.usdz; sourceTree = "<group>"; };
+		8DDFFB112BD0289C0065BD96 /* ModelsContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelsContainer.swift; sourceTree = "<group>"; };
+		8DDFFB132BD029820065BD96 /* PlaceObjectContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceObjectContainer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +65,7 @@
 				8DDFFB082BCFCF0B0065BD96 /* 3dModels */,
 				8DDFFAFA2BCFAAE10065BD96 /* AppDelegate.swift */,
 				8DDFFAFC2BCFAAE10065BD96 /* ContentView.swift */,
+				8DDFFB102BD0288C0065BD96 /* Views */,
 				8DDFFAFE2BCFAAE30065BD96 /* Assets.xcassets */,
 				8DDFFB002BCFAAE30065BD96 /* Preview Content */,
 			);
@@ -90,6 +95,15 @@
 				8DDFFB0C2BCFFEED0065BD96 /* constants.swift */,
 			);
 			path = constants;
+			sourceTree = "<group>";
+		};
+		8DDFFB102BD0288C0065BD96 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8DDFFB112BD0289C0065BD96 /* ModelsContainer.swift */,
+				8DDFFB132BD029820065BD96 /* PlaceObjectContainer.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,8 +179,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				8DDFFAFD2BCFAAE10065BD96 /* ContentView.swift in Sources */,
+				8DDFFB142BD029820065BD96 /* PlaceObjectContainer.swift in Sources */,
 				8DDFFAFB2BCFAAE10065BD96 /* AppDelegate.swift in Sources */,
 				8DDFFB0D2BCFFEED0065BD96 /* constants.swift in Sources */,
+				8DDFFB122BD0289C0065BD96 /* ModelsContainer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
