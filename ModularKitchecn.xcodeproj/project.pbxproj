@@ -11,6 +11,9 @@
 		8DDFFAFD2BCFAAE10065BD96 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDFFAFC2BCFAAE10065BD96 /* ContentView.swift */; };
 		8DDFFAFF2BCFAAE30065BD96 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DDFFAFE2BCFAAE30065BD96 /* Assets.xcassets */; };
 		8DDFFB022BCFAAE30065BD96 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DDFFB012BCFAAE30065BD96 /* Preview Assets.xcassets */; };
+		8DDFFB0A2BCFF9DA0065BD96 /* Kitchen_Design_Set_V.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 8DDFFB092BCFF9DA0065BD96 /* Kitchen_Design_Set_V.usdz */; };
+		8DDFFB0D2BCFFEED0065BD96 /* constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDFFB0C2BCFFEED0065BD96 /* constants.swift */; };
+		8DDFFB0F2BD003420065BD96 /* Painted_wooden_kitchen_cabinet.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 8DDFFB0E2BD003420065BD96 /* Painted_wooden_kitchen_cabinet.usdz */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,9 @@
 		8DDFFAFC2BCFAAE10065BD96 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8DDFFAFE2BCFAAE30065BD96 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8DDFFB012BCFAAE30065BD96 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8DDFFB092BCFF9DA0065BD96 /* Kitchen_Design_Set_V.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = Kitchen_Design_Set_V.usdz; sourceTree = "<group>"; };
+		8DDFFB0C2BCFFEED0065BD96 /* constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = constants.swift; sourceTree = "<group>"; };
+		8DDFFB0E2BD003420065BD96 /* Painted_wooden_kitchen_cabinet.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = Painted_wooden_kitchen_cabinet.usdz; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +57,8 @@
 		8DDFFAF92BCFAAE10065BD96 /* ModularKitchecn */ = {
 			isa = PBXGroup;
 			children = (
+				8DDFFB0B2BCFFED30065BD96 /* constants */,
+				8DDFFB082BCFCF0B0065BD96 /* 3dModels */,
 				8DDFFAFA2BCFAAE10065BD96 /* AppDelegate.swift */,
 				8DDFFAFC2BCFAAE10065BD96 /* ContentView.swift */,
 				8DDFFAFE2BCFAAE30065BD96 /* Assets.xcassets */,
@@ -65,6 +73,23 @@
 				8DDFFB012BCFAAE30065BD96 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		8DDFFB082BCFCF0B0065BD96 /* 3dModels */ = {
+			isa = PBXGroup;
+			children = (
+				8DDFFB0E2BD003420065BD96 /* Painted_wooden_kitchen_cabinet.usdz */,
+				8DDFFB092BCFF9DA0065BD96 /* Kitchen_Design_Set_V.usdz */,
+			);
+			path = 3dModels;
+			sourceTree = "<group>";
+		};
+		8DDFFB0B2BCFFED30065BD96 /* constants */ = {
+			isa = PBXGroup;
+			children = (
+				8DDFFB0C2BCFFEED0065BD96 /* constants.swift */,
+			);
+			path = constants;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +151,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				8DDFFB022BCFAAE30065BD96 /* Preview Assets.xcassets in Resources */,
+				8DDFFB0F2BD003420065BD96 /* Painted_wooden_kitchen_cabinet.usdz in Resources */,
+				8DDFFB0A2BCFF9DA0065BD96 /* Kitchen_Design_Set_V.usdz in Resources */,
 				8DDFFAFF2BCFAAE30065BD96 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -139,6 +166,7 @@
 			files = (
 				8DDFFAFD2BCFAAE10065BD96 /* ContentView.swift in Sources */,
 				8DDFFAFB2BCFAAE10065BD96 /* AppDelegate.swift in Sources */,
+				8DDFFB0D2BCFFEED0065BD96 /* constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
