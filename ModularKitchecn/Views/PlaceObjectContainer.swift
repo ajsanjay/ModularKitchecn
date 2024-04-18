@@ -14,8 +14,8 @@ struct PlaceObjectContainer: View {
     @Binding var modelForPlacement: Model?
     
     func goBack() {
-        isModelSelcted.toggle()
-        modelForPlacement = nil
+        isModelSelcted = false
+        selectedModel = nil
     }
     
     var body: some View {

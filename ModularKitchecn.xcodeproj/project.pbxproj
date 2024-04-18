@@ -10,6 +10,11 @@
 		8D80E01B2BD02FA3009D5424 /* CircleViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D80E01A2BD02FA3009D5424 /* CircleViewModifier.swift */; };
 		8D80E01D2BD0301F009D5424 /* ARContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D80E01C2BD0301F009D5424 /* ARContainer.swift */; };
 		8D80E01F2BD0341E009D5424 /* model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D80E01E2BD0341E009D5424 /* model.swift */; };
+		8D80E0212BD046A5009D5424 /* teapot.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 8D80E0202BD046A5009D5424 /* teapot.usdz */; };
+		8D80E0232BD046BE009D5424 /* flower_tulip.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 8D80E0222BD046BE009D5424 /* flower_tulip.usdz */; };
+		8D80E0252BD046D0009D5424 /* cup_saucer_set.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 8D80E0242BD046D0009D5424 /* cup_saucer_set.usdz */; };
+		8D80E0282BD0D407009D5424 /* FocusEntity in Frameworks */ = {isa = PBXBuildFile; productRef = 8D80E0272BD0D407009D5424 /* FocusEntity */; };
+		8D80E02A2BD0D6C3009D5424 /* FocusEntity in Frameworks */ = {isa = PBXBuildFile; productRef = 8D80E0292BD0D6C3009D5424 /* FocusEntity */; };
 		8DDFFAFB2BCFAAE10065BD96 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDFFAFA2BCFAAE10065BD96 /* AppDelegate.swift */; };
 		8DDFFAFD2BCFAAE10065BD96 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDFFAFC2BCFAAE10065BD96 /* ContentView.swift */; };
 		8DDFFAFF2BCFAAE30065BD96 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DDFFAFE2BCFAAE30065BD96 /* Assets.xcassets */; };
@@ -25,6 +30,9 @@
 		8D80E01A2BD02FA3009D5424 /* CircleViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleViewModifier.swift; sourceTree = "<group>"; };
 		8D80E01C2BD0301F009D5424 /* ARContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARContainer.swift; sourceTree = "<group>"; };
 		8D80E01E2BD0341E009D5424 /* model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = model.swift; sourceTree = "<group>"; };
+		8D80E0202BD046A5009D5424 /* teapot.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = teapot.usdz; sourceTree = "<group>"; };
+		8D80E0222BD046BE009D5424 /* flower_tulip.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = flower_tulip.usdz; sourceTree = "<group>"; };
+		8D80E0242BD046D0009D5424 /* cup_saucer_set.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = cup_saucer_set.usdz; sourceTree = "<group>"; };
 		8DDFFAF72BCFAAE10065BD96 /* ModularKitchecn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ModularKitchecn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DDFFAFA2BCFAAE10065BD96 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8DDFFAFC2BCFAAE10065BD96 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -42,6 +50,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D80E02A2BD0D6C3009D5424 /* FocusEntity in Frameworks */,
+				8D80E0282BD0D407009D5424 /* FocusEntity in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,6 +101,9 @@
 			children = (
 				8DDFFB0E2BD003420065BD96 /* Painted_wooden_kitchen_cabinet.usdz */,
 				8DDFFB092BCFF9DA0065BD96 /* Kitchen_Design_Set_V.usdz */,
+				8D80E0202BD046A5009D5424 /* teapot.usdz */,
+				8D80E0222BD046BE009D5424 /* flower_tulip.usdz */,
+				8D80E0242BD046D0009D5424 /* cup_saucer_set.usdz */,
 			);
 			path = 3dModels;
 			sourceTree = "<group>";
@@ -131,6 +144,10 @@
 			dependencies = (
 			);
 			name = ModularKitchecn;
+			packageProductDependencies = (
+				8D80E0272BD0D407009D5424 /* FocusEntity */,
+				8D80E0292BD0D6C3009D5424 /* FocusEntity */,
+			);
 			productName = ModularKitchecn;
 			productReference = 8DDFFAF72BCFAAE10065BD96 /* ModularKitchecn.app */;
 			productType = "com.apple.product-type.application";
@@ -159,6 +176,9 @@
 				Base,
 			);
 			mainGroup = 8DDFFAEE2BCFAAE10065BD96;
+			packageReferences = (
+				8D80E0262BD0D407009D5424 /* XCRemoteSwiftPackageReference "FocusEntity" */,
+			);
 			productRefGroup = 8DDFFAF82BCFAAE10065BD96 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -174,9 +194,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				8DDFFB022BCFAAE30065BD96 /* Preview Assets.xcassets in Resources */,
+				8D80E0252BD046D0009D5424 /* cup_saucer_set.usdz in Resources */,
 				8DDFFB0F2BD003420065BD96 /* Painted_wooden_kitchen_cabinet.usdz in Resources */,
 				8DDFFB0A2BCFF9DA0065BD96 /* Kitchen_Design_Set_V.usdz in Resources */,
+				8D80E0232BD046BE009D5424 /* flower_tulip.usdz in Resources */,
 				8DDFFAFF2BCFAAE30065BD96 /* Assets.xcassets in Resources */,
+				8D80E0212BD046A5009D5424 /* teapot.usdz in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -404,6 +427,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8D80E0262BD0D407009D5424 /* XCRemoteSwiftPackageReference "FocusEntity" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/maxxfrazer/FocusEntity";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.5.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8D80E0272BD0D407009D5424 /* FocusEntity */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8D80E0262BD0D407009D5424 /* XCRemoteSwiftPackageReference "FocusEntity" */;
+			productName = FocusEntity;
+		};
+		8D80E0292BD0D6C3009D5424 /* FocusEntity */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8D80E0262BD0D407009D5424 /* XCRemoteSwiftPackageReference "FocusEntity" */;
+			productName = FocusEntity;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8DDFFAEF2BCFAAE10065BD96 /* Project object */;
 }
